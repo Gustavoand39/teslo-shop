@@ -13,7 +13,7 @@ export const ProductGridItem = ({ product }: Props) => {
 
   return (
     <Link
-      href={`/products/${product.slug}`}
+      href={`/product/${product.slug}`}
       className="hover:bg-slate-100 backdrop-blur-sm rounded-lg"
     >
       <div className="rounded-md overflow-hidden fade-in">
