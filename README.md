@@ -1,3 +1,9 @@
+# Next.js + Tailwind CSS + TypeScript + ESLint + Prettier + Jest + React Testing Library
+
+This is a E-commerce design demo project using Next.js, inspired in Tesla's website. It is a simple project to learn how to use NextJS. It is only a design demo project, so it does not have any real functionality. Created for educational purposes.
+
+<br />
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
