@@ -11,14 +11,12 @@ const productsInCart = [
 
 export default function CheckoutPage() {
   return (
-    <div className="flex justify-center items-center mb-72 px-10 sm:px-0">
+    <div className="flex justify-center items-center px-10 sm:px-0">
       <div className="flex flex-col w-[1000px]">
         <Title title="Verificar orden" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="flex flex-col mt-5">
-            <span className="text-xl">Ajustar elementos</span>
-
+          <div className="flex flex-col">
             <Link href="/cart" className="underline mb-5">
               Editar carrito
             </Link>
@@ -33,7 +31,7 @@ export default function CheckoutPage() {
                   className="mr-5 rounded"
                 />
 
-                <div>
+                <div className="flex flex-col justify-evenly">
                   <p>{product.title}</p>
                   <p>${product.price} x 3</p>
                   <p className="font-bold">Subtotal: ${product.price * 3}</p>
@@ -45,7 +43,7 @@ export default function CheckoutPage() {
           <div className="bg-white rounded-xl shadow-xl p-7 h-auto">
             <h2 className="text-2xl font-bold mb-2">Dirección de entrega</h2>
             <div className="mb-10">
-              <p className="text-xl">Juan Pérez</p>
+              <p className="text-lg">Juan Pérez</p>
               <p>Av. Siempre Viva 123</p>
               <p>Col. Centro</p>
               <p>Alcadía Cuauhtémoc</p>
@@ -56,26 +54,26 @@ export default function CheckoutPage() {
 
             <div className="w-full h-0.5 rounded bg-gray-200 mb-10" />
 
-            <h2 className="text-2xl mb-2">Resumen de compra</h2>
+            <h2 className="text-2xl font-bold mb-2">Resumen de compra</h2>
 
             <div className="grid grid-cols-2">
-              <span>No. de artículos:</span>
+              <span className="font-semibold">No. de artículos:</span>
               <span className="text-right">3 artículos</span>
 
-              <span>Subtotal:</span>
+              <span className="font-semibold">Subtotal:</span>
               <span className="text-right">$100</span>
 
-              <span>Impuestos (15%):</span>
+              <span className="font-semibold">Impuestos (15%):</span>
               <span className="text-right">$100</span>
 
-              <span className="text-2xl mt-5">Total:</span>
+              <span className="text-2xl font-bold mt-5">Total:</span>
               <span className="text-2xl mt-5 text-right">$100</span>
             </div>
 
             <div className="mt-5 mb-2 w-full">
               <p className="mb-5 text-gray-500">
                 <span>
-                  Al hacer clic en "Continuar", aceptas nuestros{" "}
+                  Al hacer clic en &quot;Continuar&quot;, aceptas nuestros{" "}
                   <a href="#" className="underline">
                     términos y condiciones
                   </a>{" "}

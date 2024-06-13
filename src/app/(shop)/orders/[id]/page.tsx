@@ -22,12 +22,14 @@ export default function OrderPage({ params }: Props) {
   const { id } = params;
 
   return (
-    <div className="flex justify-center items-center mb-72 px-10 sm:px-0">
+    <div className="flex justify-center items-center px-10 sm:px-0">
       <div className="flex flex-col w-[1000px]">
         <Title title={`Orden #${id}`} />
 
+        <Link href="/orders" className="underline mb-8">Regresar a órdenes</Link>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="flex flex-col mt-5">
+          <div className="flex flex-col">
             <div
               className={clsx(
                 "flex items-center rounded-lg py-2 px-3.5 text-sm font-bold text-white mb-5",
@@ -52,7 +54,7 @@ export default function OrderPage({ params }: Props) {
                   className="mr-5 rounded"
                 />
 
-                <div>
+                <div className="flex flex-col justify-evenly">
                   <p>{product.title}</p>
                   <p>${product.price} x 3</p>
                   <p className="font-bold">Subtotal: ${product.price * 3}</p>
@@ -75,19 +77,19 @@ export default function OrderPage({ params }: Props) {
 
             <div className="w-full h-0.5 rounded bg-gray-200 mb-10" />
 
-            <h2 className="text-2xl mb-2">Resumen de compra</h2>
+            <h2 className="text-2xl font-bold mb-2">Resumen de compra</h2>
 
             <div className="grid grid-cols-2">
-              <span>No. de artículos:</span>
+              <span className="font-semibold">No. de artículos:</span>
               <span className="text-right">3 artículos</span>
 
-              <span>Subtotal:</span>
+              <span className="font-semibold">Subtotal:</span>
               <span className="text-right">$100</span>
 
-              <span>Impuestos (15%):</span>
+              <span className="font-semibold">Impuestos (15%):</span>
               <span className="text-right">$100</span>
 
-              <span className="text-2xl mt-5">Total:</span>
+              <span className="text-2xl font-bold mt-5">Total:</span>
               <span className="text-2xl mt-5 text-right">$100</span>
             </div>
 
@@ -96,8 +98,8 @@ export default function OrderPage({ params }: Props) {
                 className={clsx(
                   "flex items-center rounded-lg py-2 px-3.5 text-sm font-bold text-white mb-5",
                   {
-                    "bg-red-500": true,
-                    "bg-green-700": false,
+                    "bg-red-500": false,
+                    "bg-green-700": true,
                   }
                 )}
               >

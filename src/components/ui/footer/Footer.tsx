@@ -4,7 +4,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="flex w-full justify-center text-sm mb-10">
+    <footer className="flex w-full justify-center text-sm mt-10 py-8">
       <Link href="/home">
         <span className={`${titleFont.className} antialiased font-bold`}>
           Teslo {" "}

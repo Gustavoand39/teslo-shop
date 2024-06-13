@@ -57,40 +57,45 @@ export const Sidebar = () => {
         <Link
           href="/"
           className="flex items-center mt-3 p-2 hover:bg-gray-100 rounded transition-all"
+          onClick={toggleSideMenu}
         >
           <IoPersonOutline size={30} />
           <span className="ml-3 text-xl">Perfil</span>
         </Link>
 
         <Link
-          href="/"
+          href="/orders"
           className="flex items-center mt-3 p-2 hover:bg-gray-100 rounded transition-all"
+          onClick={toggleSideMenu}
         >
           <IoTicketOutline size={30} />
           <span className="ml-3 text-xl">Órdenes</span>
         </Link>
 
         <Link
-          href="/"
+          href="/auth/login"
           className="flex items-center mt-3 p-2 hover:bg-gray-100 rounded transition-all"
+          onClick={toggleSideMenu}
         >
           <IoLogInOutline size={30} />
           <span className="ml-3 text-xl">Ingresar</span>
         </Link>
 
-        <Link
+        {/* <Link
           href="/"
           className="flex items-center mt-3 p-2 hover:bg-gray-100 rounded transition-all"
+          onClick={toggleSideMenu}
         >
           <IoLogOutOutline size={30} />
           <span className="ml-3 text-xl">Salir</span>
-        </Link>
+        </Link> */}
 
-        <div className="w-full h-px bg-gray-200 my-5 rounded-md" />
+        {/* <div className="w-full h-px bg-gray-200 my-5 rounded-md" /> */}
 
-        <Link
+        {/* <Link
           href="/"
           className="flex items-center mt-3 p-2 hover:bg-gray-100 rounded transition-all"
+          onClick={toggleSideMenu}
         >
           <IoShirtOutline size={30} />
           <span className="ml-3 text-xl">Productos</span>
@@ -99,6 +104,7 @@ export const Sidebar = () => {
         <Link
           href="/"
           className="flex items-center mt-3 p-2 hover:bg-gray-100 rounded transition-all"
+          onClick={toggleSideMenu}
         >
           <IoTicketOutline size={30} />
           <span className="ml-3 text-xl">Órdenes</span>
@@ -107,10 +113,11 @@ export const Sidebar = () => {
         <Link
           href="/"
           className="flex items-center mt-3 p-2 hover:bg-gray-100 rounded transition-all"
+          onClick={toggleSideMenu}
         >
           <IoPersonOutline size={30} />
           <span className="ml-3 text-xl">Usuarios</span>
-        </Link>
+        </Link> */}
       </nav>
     </div>
   );
