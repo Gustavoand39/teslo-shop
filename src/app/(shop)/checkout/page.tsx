@@ -1,4 +1,4 @@
-import { QuantitySelector, Title } from "@/components";
+import { Title } from "@/components";
 import { initialData } from "@/seed/seed";
 import Image from "next/image";
 import Link from "next/link";
@@ -79,7 +79,11 @@ export default function CheckoutPage() {
                   <a href="#" className="underline">
                     términos y condiciones
                   </a>{" "}
-                  y nuestra <a href="#" className="underline">política de privacidad</a>.
+                  y nuestra{" "}
+                  <a href="#" className="underline">
+                    política de privacidad
+                  </a>
+                  .
                 </span>
               </p>
 
