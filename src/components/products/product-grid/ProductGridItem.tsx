@@ -14,7 +14,7 @@ export const ProductGridItem = ({ product }: Props) => {
   return (
     <Link
       href={`/product/${product.slug}`}
-      className="hover:bg-slate-100 backdrop-blur-sm rounded-lg"
+      className="hover:bg-zinc-300/80 hover:shadow-xl rounded-lg transition duration-300"
     >
       <div className="rounded-md overflow-hidden fade-in">
         <Image
@@ -27,7 +27,7 @@ export const ProductGridItem = ({ product }: Props) => {
           onMouseLeave={() => setDisplayImage(product.images[0])}
         />
 
-        <div className="p-4 flex flex-col">
+        <div className="p-4 flex flex-col justify-between h-28">
           <h3>{product.title}</h3>
           <span className="font-bold">${product.price}</span>
         </div>

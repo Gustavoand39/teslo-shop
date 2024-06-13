@@ -37,7 +37,7 @@ export default function ProductPage({ params }: Props) {
         <button className="btn-primary my-5">Agregar al carrito</button>
 
         <h3 className="font-bold text-sm">Descripción</h3>
-        <p className="font-light">{product.description}</p>
+        <p className="font-normal text-balance">{product.description}</p>
       </div>
     </div>
   );
